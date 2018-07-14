@@ -1,0 +1,14 @@
+{
+  "id": "{B527EBF7-DAC4-47A7-8DF3-4250C7CF36A6}",
+  "name": "SiemensGateControl",
+  "type": 3,
+  "vendor": "Ulrich Bittner",
+  "aliases":
+  [
+    "Siemens Gate Control"
+  ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "SGC"
+}

@@ -1,0 +1,178 @@
+{
+  "elements": [
+    {
+      "type": "ExpansionPanel",
+      "caption": "(1) General Settings",
+      "items": [
+        {
+          "type": "Label",
+          "caption": "You are using this Siemens Gate Control module in version 1.00 from 13 July 2018, 10:00."
+        },
+        {
+          "type": "ValidationTextBox",
+          "name": "Description",
+          "caption": "Description"
+        }
+      ]
+    },
+    {
+      "type": "ExpansionPanel",
+      "caption": "(2) Siemens Client Socket",
+      "items": [
+        {
+          "type": "SelectInstance",
+          "name": "ClientSocket",
+          "caption": "Client Socket"
+        },
+        {
+          "type": "NumberSpinner",
+          "name": "Timeout",
+          "caption": "Timeout",
+          "suffix": "ms"
+        }
+      ]
+    },
+    {
+      "type": "ExpansionPanel",
+      "caption": "(3) Siemens Merker",
+      "items": [
+        {
+          "type": "Select",
+          "name": "SwitchingType",
+          "caption": "Switching Type",
+          "options": [
+            {
+              "label": "Close",
+              "value": "Close"
+            },
+            {
+              "label": "Open",
+              "value": "Open"
+            },
+            {
+              "label": "Close / Open",
+              "value": "Close / Open"
+            }
+          ]
+        },
+        {
+          "type": "SelectInstance",
+          "name": "MerkerClose",
+          "caption": "Merker (Close)"
+        },
+        {
+          "type": "SelectInstance",
+          "name": "MerkerOpen",
+          "caption": "Merker (Open)"
+        }
+      ]
+    },
+    {
+      "type": "ExpansionPanel",
+      "caption": "(4) Switching Impulse",
+      "items": [
+        {
+          "type": "CheckBox",
+          "name": "UseSwitchingImpulse",
+          "caption": "Use Switching Impulse"
+        },
+        {
+          "type": "NumberSpinner",
+          "name": "ImpulseDuration",
+          "caption": "Impulse Duration",
+          "suffix": "ms"
+        }
+      ]
+    },
+    {
+      "type": "ExpansionPanel",
+      "caption": "(5) Notifications",
+      "items": [
+        {
+          "type": "CheckBox",
+          "name": "UseNotification",
+          "caption": "Use Notification"
+        },
+        {
+          "type": "SelectInstance",
+          "name": "WebFront",
+          "caption": "WebFront"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "RowLayout",
+      "items": [
+        {
+          "type": "Button",
+          "label": "Close",
+          "onClick": "SGC_ToggleMerkerVariable($id, false);"
+        },
+        {
+          "type": "Button",
+          "label": "Open",
+          "onClick": "SGC_ToggleMerkerVariable($id, true);"
+        }
+      ]
+    }
+  ],
+  "status": [
+    {
+      "code": 101,
+      "icon": "active",
+      "caption": "Siemens Gate Control will be created"
+    },
+    {
+      "code": 102,
+      "icon": "active",
+      "caption": "Siemens Gate Control is active"
+    },
+    {
+      "code": 103,
+      "icon": "active",
+      "caption": "Siemens Gate Control will be deleted"
+    },
+    {
+      "code": 104,
+      "icon": "inactive",
+      "caption": "Siemens Gate Control is inactive"
+    },
+    {
+      "code": 2111,
+      "icon": "inactive",
+      "caption": "Please enter a description under (1) General Settings!"
+    },
+    {
+      "code": 2211,
+      "icon": "inactive",
+      "caption": "Please enter the client socket data under (2) Siemens Client Socket!"
+    },
+    {
+      "code": 2321,
+      "icon": "inactive",
+      "caption": "Please select a valid Merker (Close) under (3) Siemens Merker!"
+    },
+    {
+      "code": 2331,
+      "icon": "inactive",
+      "caption": "Please select a valid Merker (Open) under (3) Siemens Merker!"
+    },
+    {
+      "code": 2341,
+      "icon": "inactive",
+      "caption": "Please select a valid Merker (Close) and Merker (Open) under (3) Siemens Merker!"
+    },
+    {
+      "code": 2421,
+      "icon": "inactive",
+      "caption": "Please enter a valid Impulse Duration under (4) Switching Impulse!"
+    },
+    {
+      "code": 2521,
+      "icon": "inactive",
+      "caption": "Please select a valid WebFront under (5) Notifications!"
+    }
+  ]
+}

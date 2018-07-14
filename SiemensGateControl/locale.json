@@ -1,0 +1,34 @@
+{
+  "translations": {
+    "de": {
+      "(1) General Settings": "(1) Allgemeine Einstellungen",
+      "You are using this Siemens Gate Control module in version 1.00 from 13 July 2018, 10:00.": "Sie nutzen dieses Siemens Gate Control Modul in der Version 1.00 vom 13.07.2018, 10:00.",
+      "Description": "Bezeichnung",
+      "Switching Type": "Schaltungsart",
+      "Close": "Schließen",
+      "Open": "Öffnen",
+      "Close / Open": "Schließen / Öffnen",
+      "Merker (Close)": "Merker (Schließen)",
+      "Merker (Open)": "Merker (Öffnen)",
+      "(4) Switching Impulse": "(4) Schaltimpuls",
+      "Use Switching Impulse": "Schaltimpuls verwenden",
+      "Impulse Duration": "Impulsdauer",
+      "(5) Notifications": "(5) Benachrichtigungen",
+      "Use Notification": "Benachrichtigung verwenden",
+      "Siemens Gate Control will be created": "Siemens Gate Control wird erstellt",
+      "Siemens Gate Control is active": "Siemens Gate Control ist aktiv",
+      "Siemens Gate Control will be deleted": "Siemens Gate Control wird gelöscht",
+      "Siemens Gate Control is inactive": "Siemens Gate Control ist inaktiv",
+      "Please enter a description under (1) General Settings!": "Bitte geben Sie eine Bezeichnung unter (1) Allgemeine Einstellungen an!",
+      "Please enter the client socket data under (2) Siemens Client Socket!": "Bitte geben Sie die Daten für den Client Socket unter (2) Siemens Client Socket an!",
+      "Please select a valid Merker (Close) under (3) Siemens Merker!": "Bitte wählen Sie einen gültigen Merker (Schließen) unter (3) Siemens Merker aus!",
+      "Please select a valid Merker (Open) under (3) Siemens Merker!": "Bitte wählen Sie einen gültigen Merker (Öffnen) unter (3) Siemens Merker aus!",
+      "Please select a valid Merker (Close) and Merker (Open) under (3) Siemens Merker!": "Bitte wählen Sie einen gültigen Merker (Schließen) und Merker (Öffnen) unter (3) Siemens Merker aus!",
+      "Please enter a valid Impulse Duration under (4) Switching Impulse!": "Bitte wählen Sie eine gültige Impulsdauer unter (4) Schaltimpuls aus!",
+      "Please select a valid WebFront under (5) Notifications!": "Bitte wählen Sie ein gültiges WebFront unter (5) Benachrichtigungen aus!",
+      "will be closed!": "wird geschlossen!",
+      "will be opened": "wird geöffnet!",
+      "There was an error during the switching process!": "Es gab einen Fehler beim Schaltvorgang!"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "{4FC5B109-BFF2-4C62-8168-76C913362BEF}",
+  "author": "Ulrich Bittner",
+  "name": "Siemens Gate Control",
+  "url": "https://github.com/ubittner/SymconSiemensGateControl.git",
+  "compatibility": {
+    "version": "4.4",
+    "date": 1518998400
+  },
+  "version": "1.0",
+  "build": 0,
+  "date": 1531468374
+}
