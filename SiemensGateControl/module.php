@@ -26,6 +26,15 @@
  */
 
 // Definitions
+if (!defined('IPS_BASE')) {
+    define('IPS_BASE', 10000);
+}
+if (!defined('IPS_KERNELMESSAGE')) {
+    define('IPS_KERNELMESSAGE', IPS_BASE + 100);
+}
+if (!defined('KR_READY')) {
+    define('KR_READY', IPS_BASE + 103);
+}
 if (!defined('WEBFRONT_GUID')) {
     define('WEBFRONT_GUID', '{3565B1F2-8F7B-4311-A4B6-1BF1D868F39E}');
 }
