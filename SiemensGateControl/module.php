@@ -197,7 +197,7 @@ class SiemensGateControl extends IPSModule
                         if ($toggleMerker == true) {
                             $interval = $this->ReadPropertyInteger('ImpulseDuration');
                             if ($interval > 0) {
-                                $this->SetTimerInterval('ImpulseDuration', $interval);
+                                $this->SetTimerInterval('SwitchingImpulse', $interval);
                             }
                             $state = true;
                         }
