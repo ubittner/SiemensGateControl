@@ -1,121 +1,106 @@
 {
   "elements": [
     {
-      "type": "ExpansionPanel",
-      "caption": "(1) General Settings",
-      "items": [
+      "type": "Label",
+      "caption": "(1) General Settings"
+    },
+    {
+      "type": "Label",
+      "caption": "You are using this Siemens Gate Control module in version 1.00 from 13 July 2018, 10:00."
+    },
+    {
+      "type": "ValidationTextBox",
+      "name": "Description",
+      "caption": "Description"
+    },
+    {
+      "type": "Label",
+      "caption": "(2) Siemens Client Socket"
+    },
+    {
+      "type": "SelectInstance",
+      "name": "ClientSocket",
+      "caption": "Client Socket"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "Timeout",
+      "caption": "Timeout",
+      "suffix": "ms"
+    },
+    {
+      "type": "Label",
+      "caption": "(3) Siemens Merker"
+    },
+    {
+      "type": "Select",
+      "name": "SwitchingType",
+      "caption": "Switching Type",
+      "options": [
         {
-          "type": "Label",
-          "caption": "You are using this Siemens Gate Control module in version 1.00 from 13 July 2018, 10:00."
+          "label": "Close",
+          "value": "Close"
         },
         {
-          "type": "ValidationTextBox",
-          "name": "Description",
-          "caption": "Description"
+          "label": "Open",
+          "value": "Open"
+        },
+        {
+          "label": "Close / Open",
+          "value": "Close / Open"
         }
       ]
     },
     {
-      "type": "ExpansionPanel",
-      "caption": "(2) Siemens Client Socket",
-      "items": [
-        {
-          "type": "SelectInstance",
-          "name": "ClientSocket",
-          "caption": "Client Socket"
-        },
-        {
-          "type": "NumberSpinner",
-          "name": "Timeout",
-          "caption": "Timeout",
-          "suffix": "ms"
-        }
-      ]
+      "type": "SelectInstance",
+      "name": "MerkerClose",
+      "caption": "Merker (Close)"
     },
     {
-      "type": "ExpansionPanel",
-      "caption": "(3) Siemens Merker",
-      "items": [
-        {
-          "type": "Select",
-          "name": "SwitchingType",
-          "caption": "Switching Type",
-          "options": [
-            {
-              "label": "Close",
-              "value": "Close"
-            },
-            {
-              "label": "Open",
-              "value": "Open"
-            },
-            {
-              "label": "Close / Open",
-              "value": "Close / Open"
-            }
-          ]
-        },
-        {
-          "type": "SelectInstance",
-          "name": "MerkerClose",
-          "caption": "Merker (Close)"
-        },
-        {
-          "type": "SelectInstance",
-          "name": "MerkerOpen",
-          "caption": "Merker (Open)"
-        }
-      ]
+      "type": "SelectInstance",
+      "name": "MerkerOpen",
+      "caption": "Merker (Open)"
     },
     {
-      "type": "ExpansionPanel",
-      "caption": "(4) Switching Impulse",
-      "items": [
-        {
-          "type": "CheckBox",
-          "name": "UseSwitchingImpulse",
-          "caption": "Use Switching Impulse"
-        },
-        {
-          "type": "NumberSpinner",
-          "name": "ImpulseDuration",
-          "caption": "Impulse Duration",
-          "suffix": "ms"
-        }
-      ]
+      "type": "Label",
+      "caption": "(4) Switching Impulse"
     },
     {
-      "type": "ExpansionPanel",
-      "caption": "(5) Notifications",
-      "items": [
-        {
-          "type": "CheckBox",
-          "name": "UseNotification",
-          "caption": "Use Notification"
-        },
-        {
-          "type": "SelectInstance",
-          "name": "WebFront",
-          "caption": "WebFront"
-        }
-      ]
+      "type": "CheckBox",
+      "name": "UseSwitchingImpulse",
+      "caption": "Use Switching Impulse"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "ImpulseDuration",
+      "caption": "Impulse Duration",
+      "suffix": "ms"
+    },
+    {
+      "type": "Label",
+      "caption": "(5) Notifications"
+    },
+    {
+      "type": "CheckBox",
+      "name": "UseNotification",
+      "caption": "Use Notification"
+    },
+    {
+      "type": "SelectInstance",
+      "name": "WebFront",
+      "caption": "WebFront"
     }
   ],
   "actions": [
     {
-      "type": "RowLayout",
-      "items": [
-        {
-          "type": "Button",
-          "label": "Close",
-          "onClick": "SGC_ToggleMerkerVariable($id, false);"
-        },
-        {
-          "type": "Button",
-          "label": "Open",
-          "onClick": "SGC_ToggleMerkerVariable($id, true);"
-        }
-      ]
+      "type": "Button",
+      "label": "Close",
+      "onClick": "SGC_ToggleMerkerVariable($id, false);"
+    },
+    {
+      "type": "Button",
+      "label": "Open",
+      "onClick": "SGC_ToggleMerkerVariable($id, true);"
     }
   ],
   "status": [
