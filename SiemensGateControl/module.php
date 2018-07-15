@@ -298,7 +298,7 @@ class SiemensGateControl extends IPSModule
             }
         }
         if ($switchingType == 'Open') {
-            if ($merkerClose == 0) {
+            if ($merkerOpen == 0) {
                 $this->SetStatus(2331);
             }
         }
