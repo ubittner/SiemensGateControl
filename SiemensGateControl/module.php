@@ -193,7 +193,7 @@ class SiemensGateControl extends IPSModule
                             $this->SetBuffer('MerkerType', $merkerType);
                     }
                     if (!empty($merker)) {
-                        $toggleMerker = S7_WriteBit($merker, $State);
+                        $toggleMerker = S7_WriteBit($merker, true);
                         if ($toggleMerker == true) {
                             $interval = $this->ReadPropertyInteger('ImpulseDuration');
                             if ($interval > 0) {
